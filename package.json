@@ -1,0 +1,16 @@
+{
+	"name": "Comps381f-TakeHomeAssignment-12196093hw",
+	"description": "Comps381f-TakeHomeAssignment-12196093hw",
+	"author": "HungKamChung-12196093",
+	"version": "1.0.0",
+	"dependencies": {
+		"formidable": "latest",
+		"express": "*",
+		"ejs": "*",
+		"exif": "*"
+	},
+	"scripts": {
+		"start": "node server.js"
+	},
+	"engine": "*"
+}

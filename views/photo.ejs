@@ -1,0 +1,33 @@
+<html>
+
+<head>
+	<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Display</title>
+</head>
+
+<body>
+    <div class="container">
+	<div class="row">
+	<div class="col-12 col-md-12">
+		<h1><%= photo.title %></h1>
+		<p><%= photo.description %></p>
+	</div>
+        <div class="col-12 col-md-6">
+		<p><img src=" data:<%=photo.mimetype%>;base64, <%=photo.image%>" style="width:100%"></p>
+	</div>
+	<div class="col-12 col-md-6">	
+		<table border="1">
+			<tr><td>Make: <%= photo.make %></td></tr>
+			<tr><td>Model: <%= photo.model %></td></tr>
+			<tr><td>Created On: <%= photo.createdOn %></td></tr>
+			<tr><td>Location: <a href="/map?lat=<%=photo.locationLat%>&lon=<%=photo.locationLon%>">Map</a></td></tr>
+		</table><br>
+		<button type="button" class="btn btn-outline-primary"><a href="/">Home</a></button>
+	</div>
+	</div>
+    </div>
+</body>
+
+</html>
